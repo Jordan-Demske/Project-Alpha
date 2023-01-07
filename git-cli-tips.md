@@ -4,16 +4,16 @@
 
 1. `git checkout -b my-feature-branch`
 1. Work, committing like normal.
-1. Close Godot.
+1. Close _Editing Tools_.
 1. `git checkout main`
 1. `git pull --rebase`
 1. `git checkout my-feature-branch`
 1. `git rebase main`
-1. Open Godot, test your feature branch, fix as necessary.
+1. Open _Editing Tools_, test your feature branch, fix as necessary.
 1. `git rebase -i main`
     1. Pick the top one, squash the rest.
     1. Write a good commit message.
-1. Close Godot.
+1. Close _Editing Tools_.
 1. `git checkout main`
 1. `git rebase my-feature-branch`
 1. `git branch -d my-feature-branch`
@@ -37,12 +37,12 @@ For example, let's say I'm on Windows and I want to go to my desktop folder. I'd
 ## Checking out the project
 
 ```
-git clone https://github.com/CS490-SoftwareProductionStudio/CanningSeason.git
+git clone https://github.com/Jordan-Demske/Project-Alpha.git
 ```
 
-This will clone the project into a new direcotry, `CanningSeason`, off of the current directory. For example, if you followed the instructions above, you would see this directory on your desktop.
+This will clone the project into a new direcotry, `Project_Alpha`, off of the current directory. For example, if you followed the instructions above, you would see this directory on your desktop.
 
-Note that, since you have a copy of the project, you can now open it with Godot Engine. The novice way to do this is to run Godot Engine, select Import, navigate to the `CanningSeason/project` directory, and selecting the `project.godot` file there. The expert way to do it is to make an alias so that you can do this all from the command-line. Let me know if you want me to help you do that.
+Note that, since you have a copy of the project, you can now open it with _Editing Tools_.
 
 ## A quick note about merge conflicts
 
@@ -82,7 +82,7 @@ At any time, you can run `git log --abbrev --decorate --oneline --graph` to see 
 
 OK, so you have a branch called `my-feature-branch` and you're ready to bring it in to `main` for the whole team. Here's what to do.
 
-First, close the editor. If you change branches while Godot Engine is open, you're more likely to have a bad time.
+First, close the editor. If you change branches while _Editing Tools_ is open, you're more likely to have a bad time.
 
 Then, update `main` to get any changes that have happened there since you started working on your feature branch. Do that like this:
 - Switch branches: `git checkout main`
